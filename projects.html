@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ranganatha's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+        main {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgb(170, 107, 228);
+            text-align: center;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .project-item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .project-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            margin-bottom: 10px;
+        }
+        .download-btn {
+
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(170, 107, 228);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+        }
+        .view-project-btn {
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 72px;
+            padding: 10px;
+            background-color: rgb(170, 107, 228);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .view-project-btn:hover, .download-btn:hover {
+            background-color: rgb(153, 86, 204);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(18, 18, 62);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ranganatha's Portfolio</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <h1>Projects</h1>
+        </section>
+
+        <div class="projects-container">
+            <section class="project-item">
+                <h2>Online Course Registration</h2>
+                <div class="project-description">
+                    
+                    <p>This project is a web application for Student Course Management, allowing students to Create and Enroll with a clean, responsive UI.</p>
+                    <P>Technolgies Used : PHp ,Html , Css , React,SQL </P>
+                </div>
+                
+                <a class="download-btn" href="E:\Portfolio\Projects\Online-course-registartion-Using-PHP.zip" download>Download Zip</a>
+                <a class="download-btn" href="E:\Portfolio\Projects\Online-course-registartion-Using-PHP\Reports\DBMSMINIPROJECTFINALCOPYTOPRINT.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/task-app" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>Blog Platform</h2>
+                <div class="project-description">
+                    <p>A simple blog platform where users can write, edit, and delete blog posts, with features like comments and profiles.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="blog_platform.zip" download>Download Zip</a>
+                <a class="download-btn" href="blog_platform_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/blog-platform" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+            <section class="project-item">
+                <h2>E-Commerce Application</h2>
+                <div class="project-description">
+                    <p>This project is an e-commerce platform allowing users to browse products, add items to a cart, and proceed with checkout.</p>
+                    <P>Technolgies Used : Java ,Html , Css , React, </P>
+                </div>
+                
+                <a class="download-btn" href="e_commerce.zip" download>Download Zip</a>
+                <a class="download-btn" href="e_commerce_report.pdf" target="_blank">Project Report</a>
+                <a class="view-project-btn" href="https://github.com/your-repo/e-commerce" target="_blank">View Project</a>
+            </section>
+
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ranganatha. All rights reserved.</p>
+    </footer>
+</body>
+</html>

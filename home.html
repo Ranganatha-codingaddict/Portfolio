@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ranganatha's Portfolio</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgb(18, 18, 62);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Navbar Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        nav .left {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: rgb(170, 107, 228);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(153, 153, 226);
+            color: rgb(18, 18, 62);
+            transform: scale(1.1);
+        }
+
+        /* Main Container */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        section h2 {
+            color: rgb(170, 107, 228);
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        section p {
+            color: lightgray;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .resume-link a,
+        .certificate-link a,
+        .view-details a {
+            color: white;
+            background-color: rgb(170, 107, 228);
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .resume-link a:hover,
+        .certificate-link a:hover,
+        .view-details a:hover {
+            background-color: rgb(153, 153, 226);
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            section {
+                flex: 1 1 100%;
+                padding: 15px;
+            }
+
+            .resume-link a,
+            .certificate-link a,
+            .view-details a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Ranganatha's Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-container">
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! My name is <strong>Ranganatha S</strong>. I am an undergraduate student pursuing a Bachelor's of Engineering in Computer Science and Engineering(Final-Year) in SJM Institute Of Technology at Chitradurga. I am passionate about web development, programming, and learning new technologies. I also enjoy troubleshooting, Debugging and playing cricket and watching movies.</p>
+            </section>
+
+            <!-- Preferences Section -->
+            <section id="preferences">
+                <h2>Preferences</h2>
+                <p>Here are some of my areas of interest and preferences:</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Machine Learning</li>
+                    <li>Open Source Contributions</li>
+                    <li>UI/UX Design</li>
+                    <li>App Development</li>
+                    <li>Cloud Computing</li>
+                </ul>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <p>My academic journey so far:</p>
+                <ul>
+                    <li><strong>SSLC (2018-2019):</strong> Adharsha Vidyalaya, Challakere - 89.12%</li>
+                    <li><strong>PUC (2019-2021):</strong> SRS PUE College, Challakere - 83.16%</li>
+                    <li><strong>B.E. (2021-2025):</strong> SJMIT, Chitradurga - Current CGPA: 8.0</li>
+                </ul>
+                <div class="view-details">
+                    <a href="education.html">View Full Details</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <!-- Certificates Section -->
+            <section id="certificates">
+                <h2>Certificates</h2>
+                <ul>
+                    <li>Certificate in Java,c++,php - <a class="certificate-link" href="certificates\udemy_c++,java,php.pdf" target="_blank">View Certificate</a></li>
+                    <li>Artificial Intelligence & Machine Learning - <a class="certificate-link" href="certificates\Aiml internship certificate Ranganatha S.pdf" target="_blank">View Certificate</a></li>
+                    <li>Python & SQL - <a class="certificate-link" href="certificates\python and sql certificate Ranganatha S.pdf" target="_blank">View Certificate</a></li>
+                    <li>Spring, Spring-Boot, Hibernate - <a class="certificate-link" href="certificates\Ranganatha_S_Spring&hibernateCertificate.pdf" target="_blank">View Certificate</a></li>
+                    <li>Sql for Data Analysis-Webinar - <a class="certificate-link" href="certificates\SQL for Data Analysis - Webinar.png" target="_blank">View Certificate</a></li>
+                </ul>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume">
+                <h2>Resume/CV</h2>
+                <p>You can view or download my resume by clicking the link below:</p>
+                <div class="resume-link">
+                    <a href="markscards/Ranganatha S - Resumae.pdf" target="_blank">View Resume/CV</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
